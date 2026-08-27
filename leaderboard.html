@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LEADERBOARD | WAVE LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { overflow-y: auto; }
+        #canvas { position: fixed; top: 0; left: 0; z-index: -1; pointer-events: none; }
+        .lb-container { max-width: 800px; margin: 60px auto; padding: 0 20px; }
+        table { width: 100%; border-collapse: separate; border-spacing: 0 10px; }
+        tr { background: rgba(20, 22, 30, 0.8); backdrop-filter: blur(10px); transition: 0.3s; }
+        tr:hover { transform: scale(1.02); border-color: var(--accent); }
+        td { padding: 20px; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        td:first-child { border-radius: 8px 0 0 8px; border-left: 1px solid var(--border); width: 80px; text-align: center; font-weight: 700; }
+        td:last-child { border-radius: 0 8px 8px 0; border-right: 1px solid var(--border); text-align: right; color: var(--accent); font-weight: 700; }
+        .gold { color: var(--gold); } .silver { color: var(--silver); } .bronze { color: var(--bronze); }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+    <nav>
+        <div class="nav-logo">LEADERBOARD</div>
+        <a href="index.html" class="nav-link">BACK TO LIST</a>
+    </nav>
+    <div class="lb-container">
+        <table><tbody id="lb-data"></tbody></table>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+        let parts = [];
+        function initCanvas() {
+            canvas.width = window.innerWidth; canvas.height = window.innerHeight;
+            parts = []; for(let i=0; i<100; i++) parts.push({x: Math.random()*canvas.width, y: Math.random()*canvas.height, s: Math.random()*2, sp: Math.random()*0.5+0.1});
+        }
+        function anim() {
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            parts.forEach(p => { ctx.fillStyle = "rgba(255,65,65,0.3)"; ctx.beginPath(); ctx.arc(p.x, p.y, p.s, 0, Math.PI*2); ctx.fill(); p.y -= p.sp; if(p.y<0) p.y=canvas.height; });
+            requestAnimationFrame(anim);
+        }
+        window.onresize = initCanvas; initCanvas(); anim();
+
+        async function load() {
+            const res = await fetch(`levels.json?v=${new Date().getTime()}`);
+            const data = await res.json();
+            const scores = {};
+            const clean = (n) => n.replace(/\./g, '').trim();
+
+            data.forEach(l => {
+                const v = clean(l.verifier);
+                scores[v] = (scores[v] || 0) + l.points;
+                l.victors.forEach(vic => { const vn = clean(vic); scores[vn] = (scores[vn] || 0) + l.points; });
+            });
+
+            const sorted = Object.entries(scores).sort((a,b) => b[1]-a[1]);
+            const table = document.getElementById('lb-data');
+            sorted.forEach(([name, pts], i) => {
+                const r = i+1;
+                const c = r==1?'gold':r==2?'silver':r==3?'bronze':'';
+                
+                // Wrapped the name inside an anchor link targeting player.html
+                table.innerHTML += `
+                    <tr>
+                        <td class="${c}">#${r}</td>
+                        <td>
+                            <a href="player.html?name=${encodeURIComponent(name)}" class="player-link" style="text-decoration: none;">
+                                ${name}
+                            </a>
+                        </td>
+                        <td>${pts.toLocaleString()} PTS</td>
+                    </tr>
+                `;
+            });
+        }
+        load();
+    </script>
+</body>
+</html>

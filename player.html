@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE WAVE LIST - PLAYER PROFILE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body { overflow-y: auto !important; }
+
+        .profile-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .profile-header {
+            text-align: center;
+            margin-bottom: 50px;
+            background: rgba(20, 22, 30, 0.6);
+            padding: 40px;
+            border-radius: 16px;
+            border: 1px solid var(--border);
+            backdrop-filter: blur(10px);
+        }
+        .profile-name {
+            font-size: 3rem;
+            font-weight: 800;
+            margin: 0 0 10px 0;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        .stats-badges-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+        .stats-badge {
+            display: inline-block;
+            background: rgba(255, 65, 65, 0.1);
+            color: var(--accent);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: 1px solid rgba(255, 65, 65, 0.2);
+        }
+        .hardest-badge {
+            background: rgba(255, 207, 75, 0.1);
+            color: var(--gold);
+            border: 1px solid rgba(255, 207, 75, 0.2);
+        }
+        .section-title {
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            margin: 40px 0 20px 0; 
+            text-transform: uppercase; 
+            letter-spacing: 1px;
+        }
+        .completed-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+        .level-card {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .unbeaten-card {
+            opacity: 0.6;
+            border-style: dashed;
+            background: rgba(10, 11, 15, 0.4);
+        }
+        .level-info {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .level-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin: 0;
+            color: #fff;
+        }
+        .level-meta {
+            font-size: 0.85rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo" onclick="window.location.href='index.html'" style="cursor:pointer;">THE WAVE LIST</div>
+        <div>
+            <a href="index.html" class="nav-link">BACK TO LIST</a>
+        </div>
+    </nav>
+
+    <div class="profile-container">
+        <div class="profile-header">
+            <h1 id="playerNameHeading" class="profile-name">LOADING...</h1>
+            <div class="stats-badges-container">
+                <div id="completionCount" class="stats-badge">0 COMPLETIONS</div>
+                <div id="hardestLevel" class="stats-badge hardest-badge" style="display: none;">HARDEST: NONE</div>
+            </div>
+        </div>
+
+        <h2 class="section-title">Completed Levels</h2>
+        <div id="completedGrid" class="completed-grid"></div>
+
+        <h2 class="section-title">Created Levels</h2>
+        <div id="createdGrid" class="completed-grid"></div>
+
+        <h2 class="section-title" style="color: #666;">Non-Completed Levels</h2>
+        <div id="unbeatenGrid" class="completed-grid"></div>
+    </div>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const targetPlayer = urlParams.get('name');
+
+        async function loadPlayerProfile() {
+            const nameHeading = document.getElementById('playerNameHeading');
+            const countBadge = document.getElementById('completionCount');
+            const hardestBadge = document.getElementById('hardestLevel');
+            const grid = document.getElementById('completedGrid');
+            const creationsGrid = document.getElementById('createdGrid');
+            const unbeatenGrid = document.getElementById('unbeatenGrid');
+
+            if (!targetPlayer) {
+                nameHeading.innerText = "PLAYER NOT FOUND";
+                return;
+            }
+
+            nameHeading.innerText = targetPlayer;
+
+            try {
+                const response = await fetch(`levels.json?v=${new Date().getTime()}`); 
+                const data = await response.json();
+
+                data.sort((a, b) => b.points - a.points);
+
+                let completionCount = 0;
+                let creationCount = 0;
+                let unbeatenCount = 0;
+                let hardestLvl = null;
+                let hardestRank = 0;
+                
+                grid.innerHTML = "";
+                creationsGrid.innerHTML = "";
+                unbeatenGrid.innerHTML = "";
+
+                data.forEach((level, index) => {
+                    const rank = index + 1;
+                    
+                    const hasBeaten = level.victors && level.victors.some(v => v.toLowerCase() === targetPlayer.toLowerCase());
+                    const isVerifier = level.verifier && level.verifier.toLowerCase() === targetPlayer.toLowerCase();
+                    const isCreator = level.creator && level.creator.toLowerCase() === targetPlayer.toLowerCase();
+
+                    // --- PROCESS COMPLETIONS / VERIFICATIONS ---
+                    if (hasBeaten || isVerifier) {
+                        completionCount++;
+
+                        if (!hardestLvl || level.points > hardestLvl.points) {
+                            hardestLvl = level;
+                            hardestRank = rank;
+                        }
+
+                        const card = document.createElement('div');
+                        card.className = 'level-card';
+                        card.innerHTML = `
+                            <div class="level-info">
+                                <h3 class="level-title">#${rank} - ${level.name}</h3>
+                                <div class="level-meta">
+                                    <p style="margin: 4px 0;"><strong>Creator:</strong> ${level.creator}</p>
+                                    <p style="margin: 4px 0;"><strong>Value:</strong> ${level.points} PTS</p>
+                                    <p style="margin: 4px 0; color: var(--accent);"><strong>Role:</strong> ${isVerifier ? 'Verifier' : 'Victor'}</p>
+                                </div>
+                            </div>
+                        `;
+                        grid.appendChild(card);
+                    }
+
+                    // --- PROCESS CREATIONS ---
+                    if (isCreator) {
+                        creationCount++;
+                        
+                        const card = document.createElement('div');
+                        card.className = 'level-card';
+                        card.innerHTML = `
+                            <div class="level-info">
+                                <h3 class="level-title">#${rank} - ${level.name}</h3>
+                                <div class="level-meta">
+                                    <p style="margin: 4px 0;"><strong>Verifier:</strong> ${level.verifier || 'N/A'}</p>
+                                    <p style="margin: 4px 0;"><strong>Value:</strong> ${level.points} PTS</p>
+                                    <p style="margin: 4px 0; color: var(--gold);"><strong>ID:</strong> ${level.id || 'Unknown'}</p>
+                                </div>
+                            </div>
+                        `;
+                        creationsGrid.appendChild(card);
+                    }
+
+                    // --- PROCESS NON-COMPLETIONS ---
+                    if (!hasBeaten && !isVerifier) {
+                        unbeatenCount++;
+
+                        const card = document.createElement('div');
+                        card.className = 'level-card unbeaten-card';
+                        card.innerHTML = `
+                            <div class="level-info">
+                                <h3 class="level-title" style="color: #aaa;">#${rank} - ${level.name}</h3>
+                                <div class="level-meta">
+                                    <p style="margin: 4px 0;"><strong>Creator:</strong> ${level.creator}</p>
+                                    <p style="margin: 4px 0;"><strong>Value:</strong> ${level.points} PTS</p>
+                                    <p style="margin: 4px 0;"><strong>ID:</strong> ${level.id || 'Unknown'}</p>
+                                    <p style="margin: 4px 0; color: #555;"><strong>Status:</strong> Unbeaten</p>
+                                </div>
+                            </div>
+                        `;
+                        unbeatenGrid.appendChild(card);
+                    }
+                });
+
+                countBadge.innerText = `${completionCount} ${completionCount === 1 ? 'COMPLETION' : 'COMPLETIONS'}`;
+
+                if (hardestLvl) {
+                    hardestBadge.innerText = `HARDEST: #${hardestRank} ${hardestLvl.name.toUpperCase()} (${hardestLvl.points} PTS)`;
+                    hardestBadge.style.display = "inline-block";
+                } else {
+                    hardestBadge.style.display = "none";
+                }
+
+                if (completionCount === 0) {
+                    grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; color:#444; padding:40px;">No recorded list records found for this player.</div>`;
+                }
+                
+                if (creationCount === 0) {
+                    creationsGrid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; color:#444; padding:40px;">No created levels found on the list for this player.</div>`;
+                }
+
+                if (unbeatenCount === 0) {
+                    unbeatenGrid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; color:var(--gold); padding:40px; font-weight:700;">100% LIST CLEAR! This player has beaten every level!</div>`;
+                }
+
+            } catch (error) {
+                console.error(error);
+                grid.innerHTML = `<div style="grid-column: 1/-1; text-align:center; color:var(--accent); padding:40px;">Error loading player profile layout data.</div>`;
+            }
+        }
+
+        loadPlayerProfile();
+    </script>
+</body>
+</html>

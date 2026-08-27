@@ -1,0 +1,1392 @@
+[
+  { 
+    "name": "EmErAlD", 
+    "points": 475, 
+    "creator": "ashyy", 
+    "verifier": "ashyy", 
+    "id": "145763031", 
+    "video": "d2xh3Ivz5tc", 
+    "thumbnail": "Thumbnail/EmErAlD.jpg", 
+    "victors": [] 
+  },
+  { 
+    "name": "The Aquarium", 
+    "points": 450, 
+    "creator": "lunikay", 
+    "verifier": "lunikay", 
+    "id": "144369660", 
+    "video": "wzks1jRunhw", 
+    "thumbnail": "Thumbnail/aquarium.webp", 
+    "victors": ["melhorando"] 
+  },
+  { 
+    "name": "ZIRCONIUM SHARD", 
+    "points": 425, 
+    "creator": "newbite", 
+    "verifier": "lunikay", 
+    "id": "141489060", 
+    "video": "cRZX8agj1hg", 
+    "thumbnail": "Thumbnail/Zir.jpg", 
+    "victors": [] 
+  },
+  { 
+    "name": "tel aviv", 
+    "points": 410, 
+    "creator": "lunikay", 
+    "verifier": "lunikay", 
+    "id": "137192393", 
+    "video": "dabEUloGyQE&pp", 
+    "thumbnail": "Thumbnail/telaviv.gif", 
+    "victors": [] 
+  },
+  { 
+    "name": "DBS", 
+    "points": 405, 
+    "creator": "ashyy", 
+    "verifier": "ashyy", 
+    "id": "145635042", 
+    "video": "RvBQD-X5xE0", 
+    "thumbnail": "Thumbnail/dbs.png", 
+    "victors": [] 
+  },
+  { 
+    "name": "SYMM NO SCLEARS", 
+    "points": 400, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "141009216", 
+    "video": "qaJ506dG0AQ", 
+    "thumbnail": "Thumbnail/SymmNoSclears.png", 
+    "victors": ["OneShot786","lunikay"] 
+  },
+  { 
+    "name": "ULTIMATE pants eater", 
+    "points": 375 , 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "143500994", 
+    "video": "Tqy9BJ6mJEU", 
+    "thumbnail": "Thumbnail/panteat.jpg", 
+    "victors": ["Nova_Remnant"] 
+  },
+  { 
+    "name": "The Brajan dih", 
+    "points": 355, 
+    "creator": "Armi12", 
+    "verifier": "puffiballgd", 
+    "id": "142071407", 
+    "video": "Z1Ug_3PeFnY", 
+    "thumbnail": "Thumbnail/Brajan.png", 
+    "victors": ["ashyy","Symm","FJKR"] 
+  },
+  { 
+    "name": "bikini bottom for go", 
+    "points": 370, 
+    "creator": "lunikay", 
+    "verifier": "lunikay", 
+    "id": "135634510", 
+    "video": "EON90JcGTcU&pp", 
+    "thumbnail": "Thumbnail/bikinibottomforgo.jpg", 
+    "victors": [] 
+  },
+  { 
+    "name": "Toocub3d", 
+    "points": 360, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "137723829", 
+    "video": "Fgl51rwpMP8", 
+    "thumbnail": "Thumbnail/Too.png", 
+    "victors": ["ashyy","Symm"] 
+  },
+  { 
+    "name": "Defeated Brajan", 
+    "points": 390, 
+    "creator": "Symm & Armi12", 
+    "verifier": "Symm", 
+    "id": "127766355", 
+    "video": "ZmX_l_ALCd4", 
+    "thumbnail": "Thumbnail/DefeatedBrajan.png", 
+    "victors": ["Karen"] 
+  },
+  { 
+    "name": "free era", 
+    "points": 220, 
+    "creator": "FJKR", 
+    "verifier": "FJKR", 
+    "id": "145731601", 
+    "video": "https://medal.tv/games/geometry-dash/clips/ncjz3ywqRVDdRccKC?invite=cr-MSxMbmcsNDM2Nzg5MDc5", 
+    "thumbnail": "Thumbnail/freeera.png", 
+    "victors": ["Symm","puffiballgd"] 
+  },
+  { 
+    "name": "Hypersonic Wave", 
+    "points": 260, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "141482863", 
+    "video": "QxR3C-augMg", 
+    "thumbnail": "Thumbnail/Hyper.png", 
+    "victors": []
+  },
+  { 
+    "name": "avrg sleep experience", 
+    "points": 227, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "140997973", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mLJKWhz7La6h-3ZIl?invite=cr-MSxtY1EsMTg4NDY3MDM3&v=22", 
+    "thumbnail": "Thumbnail/Avrg.png", 
+    "victors": ["OneShot786","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "W E A K L I N G", 
+    "points": 224, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "145160199", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n8TeS2YY4XAJn2LYq?invite=cr-MSxPU2QsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/WEAKLING.JPG", 
+    "victors": ["lunikay","Symm","ItsJellyGD"] 
+  },
+  { 
+    "name": "OZAWT Swag", 
+    "points": 235, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "140806539", 
+    "video": "LM9pytsz0Ps", 
+    "thumbnail": "Thumbnail/OZAWTSwag.png", 
+    "victors": ["OneShot786","puffiballgd","lunikay","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Furry Circles", 
+    "points": 215, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "143648777", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n09rsRf5xo1ZdBpko?invite=cr-MSx0NWssMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/FurryCircles.png", 
+    "victors": ["puffiballgd","newbite","Nova_Remnant","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "polargeisted", 
+    "points": 209, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "144152641", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n325RZX1AZT64lJGd?invite=cr-MSxuODgsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/polargeisted.JPG", 
+    "victors": ["newbite","MrBazooka","lunikay","Symm","puffiballgd","FJKR"] 
+  },
+  { 
+    "name": "Bazooka Wave Basic 1", 
+    "points": 69, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "143725534", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n0yBsQVWrPfMuCFoh?invite=cr-MSxzcmMsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/Bazooka.jpg", 
+    "victors": ["ChefLime","bleepboopbop","puffiballgd","Symm","FJKR"] 
+  },
+  { 
+    "name": "Loud Hexagon", 
+    "points": 125, 
+    "creator": "MrBazooka and HurryingJackM", 
+    "verifier": "MrBazooka", 
+    "id": "145160456", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n8Tngr7ZohogDQkKo?invite=cr-MSxNemYsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/LoudHexagon.png", 
+    "victors": ["puffiballgd","Symm","FJKR"] 
+  },
+  { 
+    "name": "Title Wav", 
+    "points": 135, 
+    "creator": "HurryingJackM", 
+    "verifier": "MrBazooka", 
+    "id": "140218746", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n8TSk5SpmZzZIU4tr?invite=cr-MSxmSEEsMzc5MDEwMTE22", 
+    "thumbnail": "Thumbnail/TitleWav.png", 
+    "victors": ["lunikay","Symm","puffiballgd","FJKR"] 
+  },
+  { 
+    "name": "Belief", 
+    "points": 94, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "145168175", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n95iShIUWosDWbgPZ?invite=cr-MSxrSkYsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/Belief.jpg", 
+    "victors": ["puffiballgd","HurryingJackM","ashyy","Symm","FJKR"] 
+  },
+  { 
+    "name": "Autism          Wave", 
+    "points": 222, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "145262719", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n9x9Teh5QYP15y5Y6?invite=cr-MSxheEgsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/autism.png", 
+    "victors": ["puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Alienation",
+    "points": 255, 
+    "creator": "Karen", 
+    "verifier": "Karen", 
+    "id": "140788819", 
+    "video": "uNJyorfcHng", 
+    "thumbnail": "Thumbnail/Alienation.png", 
+    "victors": ["OneShot786"] 
+  },
+  { 
+    "name": "Weon",
+    "points": 265, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "141323618", 
+    "video": "SpDn56nPVJg", 
+    "thumbnail": "Thumbnail/Weon.png", 
+    "victors": ["Karen"] 
+  },
+  { 
+    "name": "consistency god",
+    "points": 276, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "141114193", 
+    "video": "UdbTmVge974", 
+    "thumbnail": "Thumbnail/Consistency.png", 
+    "victors": ["OneShot786","Symm","ashyy","FJKR"] 
+  },
+  { 
+    "name": "TooSquared", 
+    "points": 350, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "126306734", 
+    "video": "jlYzk2y33wM", 
+    "thumbnail": "Thumbnail/TooSquared.png", 
+    "victors": ["Symm","OneShot786","ashyy","fearflora","lunikay"] 
+  },
+  { 
+    "name": "WaVE ConTROL iG", 
+    "points": 335, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "140718247", 
+    "video": "69xRbuBF6bQ", 
+    "thumbnail": "Thumbnail/WaveControlIg.png", 
+    "victors": ["OneShot786","stain","Blendro","lunikay"] 
+  },
+  { 
+    "name": "OLG Challenge", 
+    "points": 216, 
+    "creator": "FJKR", 
+    "verifier": "FJKR", 
+    "id": "144577936", 
+    "video": "https://medal.tv/games/geometry-dash/clips/ncp370lEmfWFyZOdv?invite=cr-MSxCTFIsNDM2Nzg5MDc5", 
+    "thumbnail": "Thumbnail/OLGchall.png", 
+    "victors": ["puffiballgd"] 
+  },
+  { 
+    "name": "CIRCINUS", 
+    "points": 325, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "140602536", 
+    "video": "sfc-bXNfX-8", 
+    "thumbnail": "Thumbnail/Circinus.png", 
+    "victors": ["OneShot786","lunikay","Symm","ashyy","FJKR"] 
+  },
+  { 
+    "name": "Solar Wave", 
+    "points": 300, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "140031712", 
+    "video": "bo6HXMN_8LE", 
+    "thumbnail": "Thumbnail/SolarWave.png", 
+    "victors": ["puffiballgd","Symm","OneShot786","Blendro","lunikay","ashyy"] 
+  },
+  { 
+    "name": "DUAL !", 
+    "points": 290, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "143885815", 
+    "video": "oq3BHsUGRrU", 
+    "thumbnail": "Thumbnail/dual!.png", 
+    "victors": ["Symm","ashyy"] 
+  },
+  { 
+    "name": "PLUTONIUM", 
+    "points": 84, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "147242469", 
+    "video": "ypaAnhkIKxo", 
+    "thumbnail": "Thumbnail/PLUTONIUM.png", 
+    "victors": ["MrBazooka"] 
+  },
+  { 
+    "name": "NEPTUNIUM", 
+    "points": 210, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "147378917", 
+    "video": "1PslC9HzcLw", 
+    "thumbnail": "Thumbnail/NEPTUNIUM.png", 
+    "victors": ["MrBazooka","puffiballgd"] 
+  },
+  { 
+    "name": "visca barca", 
+    "points": 270, 
+    "creator": "xpealox", 
+    "verifier": "xpealox", 
+    "id": "140490319", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mIOBD3RwZ4JZAgqPJ?invite=cr-MSx6d2csNDk3ODU2OTQ2", 
+    "thumbnail": "Thumbnail/ViscaBarca.png", 
+    "victors": ["puffiballgd","OneShot786","ashyy","lunikay"] 
+  },
+  { 
+    "name": "REDEMPTION DAY", 
+    "points": 250, 
+    "creator": "HurryingJackM, ZizoGMD and MrBazooka", 
+    "verifier": "puffiballgd", 
+    "id": "140523629", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mLihZgGFM5k00Ujao?invite=cr-MSxWOWYsMTg4NDY3MDM3&v=39", 
+    "thumbnail": "Thumbnail/RedemptionDay.png", 
+    "victors": ["OneShot786","FJKR","MrBazooka"] 
+  },
+  { 
+    "name": "4 wide", 
+    "points": 230, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "146210800", 
+    "video": "https://medal.tv/games/geometry-dash/clips/nf6NekxA4p3fUjJm7?invite=cr-MSx1bmYsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/4wide.JPG", 
+    "victors": ["MrBazooka","FJKR","puffiballgd"] 
+  },
+  { 
+    "name": "Dumbfound Cosmos II", 
+    "points": 257, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "143505580", 
+    "video": "https://medal.tv/games/geometry-dash/clips/nf6NekxA4p3fUjJm7?invite=cr-MSx1bmYsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/dumbfound.jpg",
+    "victors": ["FJKR"] 
+  },
+  { 
+    "name": "orbed", 
+    "points": 140, 
+    "creator": "HurryingJackM", 
+    "verifier": "MrBazooka", 
+    "id": "144354464", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n4eT0mcVqKR9kfXuk?invite=cr-MSxjc24sMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/orbed.JPG", 
+    "victors": ["lunikay","puffiballgd","FJKR","Symm","Okrun"] 
+  },
+  { 
+    "name": "broed", 
+    "points": 211, 
+    "creator": "HurryingJackM and MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "144376318", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n4iW1raCNiBDR1c9G?invite=cr-MSx1ZmgsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/broed.jpg", 
+    "victors": ["lunikay","puffiballgd","FJKR","ashyy","Symm"] 
+  },
+  { 
+    "name": "baeefef", 
+    "points": 214, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "144436707", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n4js4ph4OMfaZUH5I?invite=cr-MSw5NTksMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/baefeef.png", 
+    "victors": ["lunikay","Symm","puffiballgd","FJKR","ChillTipTop","puufy"] 
+  },
+  { 
+    "name": "Vendetas Hair", 
+    "points": 240, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "140026254", 
+    "video": "hKVZMhnEitk", 
+    "thumbnail": "Thumbnail/VendetasHair.png", 
+    "victors": ["puffiballgd","OneShot786","lunikay","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Unnerfed Wave Corridor", 
+    "points": 225, 
+    "creator": "ChefLime & ItsJellyGD", 
+    "verifier": "ItsJellyGD", 
+    "id": "139994700", 
+    "video": "D4ovfowsg7s", 
+    "thumbnail": "Thumbnail/UnnerfedWaveCorridor.png", 
+    "victors": ["puffiballgd","OneShot786","Nova_Remnant","MrBazooka","lunikay"] 
+  },
+  { 
+    "name": "WAVERHOUSE", 
+    "points": 123, 
+    "creator": "ChefLime and Figo", 
+    "verifier": "puffiballgd", 
+    "id": "141919311", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mR3EKpasZXd2Zyjhg?invite=cr-MSxjOGUsMTg4NDY3MDM3&v=37", 
+    "thumbnail": "Thumbnail/Waverhouse.png", 
+    "victors": ["Karen","Okrun","MrBazooka","Symm","FJKR"] 
+  },
+  { 
+    "name": "URANIUM", 
+    "points": 165, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "147171390", 
+    "video": "bOqzEWYrRsc", 
+    "thumbnail": "Thumbnail/URANIUM.png", 
+    "victors": ["MrBazooka","puffiballgd"] 
+  },
+  { 
+    "name": "Silent Akbar II", 
+    "points": 213, 
+    "creator": "ARandomBall", 
+    "verifier": "ARandomBall", 
+    "id": "140123255", 
+    "video": "6uuNYt6SBGI", 
+    "thumbnail": "Thumbnail/SilentAkbarII.png", 
+    "victors": ["puffiballgd","xpealox","OneShot786","Karen","newbite","lunikay","FJKR","Symm"] 
+  },
+  { 
+    "name": "crazy dave", 
+    "points": 116, 
+    "creator": "bleepboopbop", 
+    "verifier": "MrBazooka", 
+    "id": "145357162", 
+    "video": "https://medal.tv/games/geometry-dash/clips/na4r9soft_BvKDkNP?invite=cr-MSxVU0osMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/crazydave.png", 
+    "victors": ["Symm","ashyy","FJKR","puffiballgd"] 
+  },
+  { 
+    "name": "helen keller chal", 
+    "points": 82, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "145483552", 
+    "video": "gL6-d-FOO4U", 
+    "thumbnail": "Thumbnail/hellenkeller.png", 
+    "victors": ["Symm","FJKR","MrBazooka","puffiballgd"] 
+  },
+  { 
+    "name": "A", 
+    "points": 221, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145477446", 
+    "video": "6ZPdjiAKOJI", 
+    "thumbnail": "Thumbnail/Bsymm.png", 
+    "victors": ["FJKR"] 
+  },
+  { 
+    "name": "C", 
+    "points": 256, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145531795", 
+    "video": "l9zEmQRkzDQ", 
+    "thumbnail": "Thumbnail/Csymm.png", 
+    "victors": ["FJKR"] 
+  },
+  { 
+    "name": "B", 
+    "points": 217, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145486335", 
+    "video": "jnwtLzsgSfY", 
+    "thumbnail": "Thumbnail/Asymm.png", 
+    "victors": ["FJKR"] 
+  },
+  { 
+    "name": "D", 
+    "points": 353, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145624285", 
+    "video": "KdtISLBfTlY", 
+    "thumbnail": "Thumbnail/Dsymm.png", 
+    "victors": ["FJKR"] 
+  },
+  { 
+    "name": "E", 
+    "points": 351, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145678027", 
+    "video": "ALtq8mQ5yQg", 
+    "thumbnail": "Thumbnail/Esymm.png", 
+    "victors": [] 
+  },
+  { 
+    "name": "F", 
+    "points": 357, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145701111", 
+    "video": "y0sZ_D-419g", 
+    "thumbnail": "Thumbnail/Fsymm.png", 
+    "victors": [] 
+  },
+  { 
+    "name": "hi hru", 
+    "points": 86, 
+    "creator": "Symm", 
+    "verifier": "Symm", 
+    "id": "145425094", 
+    "video": "OiRHxh_ImEw", 
+    "thumbnail": "Thumbnail/hihru.jpg", 
+    "victors": ["FJKR","MrBazooka","puffiballgd"] 
+  },
+  { 
+    "name": "linba", 
+    "points": 92, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "145485471", 
+    "video": "https://medal.tv/games/geometry-dash/clips/naRQhCLQaoJZ45wV5?invite=cr-MSxNNmMsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/linba.JPG", 
+    "victors": ["Symm","FJKR","MrBazooka","puffiballgd"] 
+  },
+  { 
+    "name": "Unknown Question", 
+    "points": 229, 
+    "creator": "Fallen and HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "145625141", 
+    "video": "https://medal.tv/games/geometry-dash/clips/nbGoKAB1fq1koblmF?invite=cr-MSxYMWEsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/unknownquestion.png", 
+    "victors": ["FJKR","Symm","ashyy"] 
+  },
+  { 
+    "name": "VSC unnerfed", 
+    "points": 352, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "145551425", 
+    "video": "ECbA_RePMzY", 
+    "thumbnail": "Thumbnail/VSCunnerfed.png", 
+    "victors": ["ashyy"] 
+  },
+  { 
+    "name": "defeated ez nerf", 
+    "points": 223, 
+    "creator": "puffiballgd", 
+    "verifier": "puffiballgd", 
+    "id": "141000779", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mLKiVBAGDyyj4nXKY?invite=cr-MSxpd0EsMTg4NDY3MDM3&v=20", 
+    "thumbnail": "Thumbnail/Defeated.png", 
+    "victors": ["OneShot786","Karen","lunikay","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "cycles wave", 
+    "points": 219, 
+    "creator": "HurryingJackM", 
+    "verifier": "puffiballgd", 
+    "id": "141854863", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n0xaIiPnEUCWCWw08?invite=cr-MSxvVFMsMTg4NDY3MDM3&v=22", 
+    "thumbnail": "Thumbnail/cycleswave.png", 
+    "victors": ["lunikay"] 
+  },
+  { 
+    "name": "Hell Spam", 
+    "points": 96, 
+    "creator": "MrBazooka", 
+    "verifier": "puffiballgd", 
+    "id": "143793875", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n0XgclXyCJOECdvIB?invite=cr-MSxwOUwsMTg4NDY3MDM3&v=20", 
+    "thumbnail": "Thumbnail/hellspam.jpg", 
+    "victors": ["MrBazooka","lunikay","FJKR"] 
+  },
+  { 
+    "name": "ULTIMATE DIHRUCTION", 
+    "points": 150, 
+    "creator": "ItsJellyGD", 
+    "verifier": "ItsJellyGD", 
+    "id": "139797989", 
+    "video": "eVzYSmmUvpE", 
+    "thumbnail": "Thumbnail/UltimateDihruction.png", 
+    "victors": ["xpealox","newbite","Symm","OneShot786","Karen","puffiballgd","Okrun","MrBazooka","lunikay","FJKR"] 
+  },
+  { 
+    "name": "Happiest Day", 
+    "points": 119, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "140102237", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGq05lUGreHK-dOTM?invite=cr-MSx4YmwsNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/HappiestDay.png", 
+    "victors": ["puffiballgd","Symm","MrBazooka","OneShot786","Karen","ItsJellyGD","newbite","ashyy","FJKR"] 
+  },
+  { 
+    "name": "Happiest Day Unnerfed", 
+    "points": 126, 
+    "creator": "HurryingJackM", 
+    "verifier": "Symm", 
+    "id": "140477318", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGPCs5t5kjpyQi6S8?invite=cr-MSx4SXYsNDMyMzU1MDM3&v=26", 
+    "thumbnail": "Thumbnail/HappiestDayUnnerfed.png", 
+    "victors": ["puffiballgd","xpealox","OneShot786","MrBazooka","Karen","Flibbertwiggins","Okrun","newbite","HurryingJackM","FJKR"] 
+  },
+  { 
+    "name": "Wavering", 
+    "points": 115, 
+    "creator": "HurryingJackM and ItsJellyGD", 
+    "verifier": "ItsJellyGD", 
+    "id": "140422030", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mIHMPPdzJ-FqegAXI?invite=cr-MSxrOGUsNDk3ODU2OTQ2", 
+    "thumbnail": "Thumbnail/Wavering.png", 
+    "victors": ["xpealox","OneShot786","MrBazooka","Karen","puffiballgd","Flibbertwiggins","Okrun","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Moody Sigma", 
+    "points": 95, 
+    "creator": "HurryingJackM", 
+    "verifier": "HurryingJackM", 
+    "id": "140163784", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGMcLSLJjwDn_aLiI?invite=cr-MSxveTksNjI5OTQ2MTIx", 
+    "thumbnail": "Thumbnail/MoodySigma.png", 
+    "victors": ["puffiballgd","xpealox","Symm","OneShot786","Karen","MrBazooka","newbite","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "TWL Level", 
+    "points": 98, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "142778113", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mVe6v5vgy8ZK65ym5?invite=cr-MSw0eXosNjIzNjE5NTI1", 
+    "thumbnail": "Thumbnail/TWL.png", 
+    "victors": ["newbite","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "watch the moon", 
+    "points": 78, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140666713", 
+    "video": "sGOXVv6n-8A", 
+    "thumbnail": "Thumbnail/WatchTheMoon.png", 
+    "victors": ["puffiballgd","MrBazooka","OneShot786","HurryingJackM","Karen","jtohobby","Flibbertwiggins","beat","newbite","lunikay","FJKR","Symm","Okrun"] 
+  },
+  { 
+    "name": "WAVEWHALS", 
+    "points": 70, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "143284986", 
+    "video": "6Pp8EcPLOPQ", 
+    "thumbnail": "Thumbnail/whals.png", 
+    "victors": ["ZizoGMD","MrBazooka","newbite","bleepboopbop","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Nerfed Wave Corridor", 
+    "points": 43, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "142515558", 
+    "video": "2DIs3UAjpEs", 
+    "thumbnail": "Thumbnail/corridorn.png", 
+    "victors": ["MrBazooka","bleepboopbop","puffiballgd","lunikay","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Silent Wave Corridor Infinity Unleashed XYZ", 
+    "points": 128, 
+    "creator": "ChefLime", 
+    "verifier": "MrBazooka", 
+    "id": "145254597", 
+    "video": "https://medal.tv/games/screen-capture/clips/n9u7vfSGrZYWrNDQJ?invite=cr-MSxZRE0sMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/SWCIUXYZ.png", 
+    "victors": ["puffiballgd","FJKR"] 
+  },
+  { 
+    "name": "WAHH", 
+    "points": 83, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "141386522", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mNLjti2poAnuJSp_Y?invite=cr-MSxwMWYsNjIzNjE5NTI1", 
+    "thumbnail": "Thumbnail/WAHH.png", 
+    "victors": ["OneShot786","puffiballgd","newbite","lunikay","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Bloodier Bath", 
+    "points": 124, 
+    "creator": "Karen", 
+    "verifier": "Karen", 
+    "id": "142083239", 
+    "video": "sPO2KJZi3kY", 
+    "thumbnail": "Thumbnail/Bloodier.png", 
+    "victors": ["puffiballgd","Symm","FJKR"] 
+  },
+  { 
+    "name": "wave nation", 
+    "points": 170, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "145348389", 
+    "video": "R5MJLq80vsYY", 
+    "thumbnail": "Thumbnail/wavenation.png", 
+    "victors": ["HurryingJackM","MrBazooka","Symm","puffiballgd","FJKR"] 
+  },
+  { 
+    "name": "dc wave but good", 
+    "points": 52, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "145353444", 
+    "video": "OGA9p3IZ6IM", 
+    "thumbnail": "Thumbnail/dcwavevutgood.png", 
+    "victors": ["ChefLime","MrBazooka","puffiballgd","HurryingJackM","Symm","FJKR"] 
+  },
+  { 
+    "name": "D Blocked", 
+    "points": 85, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "142111163", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mRzIP5ALba2F4J3fH?invite=cr-MSxnaHMsNjIzNjE5NTI1", 
+    "thumbnail": "Thumbnail/D.png", 
+    "victors": ["newbite","puffiballgd","lunikay","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "bro think he BoJ", 
+    "points": 84, 
+    "creator": "jtohobby", 
+    "verifier": "jtohobby", 
+    "id": "141317731", 
+    "video": "USa2ZFGN93Q", 
+    "thumbnail": "Thumbnail/Bro.jpg", 
+    "victors": ["OneShot786","Karen","puffiballgd","MrBazooka","Flibbertwiggins","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "maybe he is BoJ", 
+    "points": 90, 
+    "creator": "jtohobby", 
+    "verifier": "jtohobby", 
+    "id": "141390076", 
+    "video": "o7GFtyckkXo", 
+    "thumbnail": "Thumbnail/Maybe.jpg", 
+    "victors": ["Okrun","MrBazooka","newbite","puffiballgd","lunikay","FJKR"] 
+  },
+  { 
+    "name": "Old Wave Corridor", 
+    "points": 81, 
+    "creator": "ChefLime", 
+    "verifier": "newbite", 
+    "id": "139974918", 
+    "video": "q9YDZzS8Ow", 
+    "thumbnail": "Thumbnail/OldWaveCorridor.png", 
+    "victors": ["xpealox","Symm","MrBazooka","OneShot786","Karen","HurryingJackM","puffiballgd","lunikay","FJKR"] 
+  },
+  { 
+    "name": "Lost Signal", 
+    "points": 66, 
+    "creator":"ChefLime",
+    "verifier":"ChefLime",
+     "id": "140217050", 
+    "video": "SPJuTwbBSeo", 
+    "thumbnail": "Thumbnail/LostSignal.png", 
+    "victors": ["puffiballgd","MrBazooka","ZizoGMD","OneShot786","HurryingJackM","Karen","Flibbertwiggins","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Crying Heart", 
+    "points": 78, 
+    "creator": "ZizoGMD", 
+    "verifier": "ZizoGMD", 
+    "id": "147436995", 
+    "video": "https://medal.tv/games/geometry-dash/clips/nmLAZ7sOG9DDzXWX_?invite=cr-MSw5VUMsNzUwNDgwNDIz", 
+    "thumbnail": "Thumbnail/CryingHeart.png", 
+    "victors": ["ChefLime","MrBazooka","FJKR","puufy","puffiballgd"] 
+  },
+  { 
+    "name": "Wave Corridor", 
+    "points": 75, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "139972029", 
+    "video": "8ELYwPl1sBY", 
+    "thumbnail": "Thumbnail/WaveCorridor.png", 
+    "victors": ["xpealox","ARandomBall","ZizoGMD","newbite","MrBazooka","Symm","puffiballgd","OneShot786","Karen","HurryingJackM","Flibbertwiggins","Nova_Remnant","lunikay","FJKR"] 
+  },
+  { 
+    "name": "ChefLime Circles", 
+    "points": 65, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140080516", 
+    "video": "SKdU9xnhDys", 
+    "thumbnail": "Thumbnail/ChefLimeCircles.png", 
+    "victors": ["xpealox","Symm","ARandomBall","MrBazooka","newbite","OneShot786","Karen","HurryingJackM","puffiballgd","Flibbertwiggins","lunikay","FJKR"] 
+  },
+  { 
+    "name": "Figo Likes Wave", 
+    "points": 50, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "139854071", 
+    "video": "CTtChqnIGy4", 
+    "thumbnail": "Thumbnail/FigoLikesWave.png", 
+    "victors": ["newbite","puffiballgd","OneShot786","Karen","Flibbertwiggins","MrBazooka","bleepboopbop","lunikay","HurryingJackM","Symm","FJKR"] 
+  },
+  { 
+    "name": "YT Shorts Be Like", 
+    "points": 57, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "143693449", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n0piAgEfp1hjss31A?invite=cr-MSx5cXcsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/YTShorts.jpg", 
+    "victors": ["ChefLime","puffiballgd","HurryingJackM","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "3squared", 
+    "points": 68, 
+    "creator": "ZizoGMD", 
+    "verifier": "ZizoGMD", 
+    "id": "141011086", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mLMtGPFuMuZiXNwTi?invite=cr-MSxpNnEsNjI5MjU3MTI3", 
+    "thumbnail": "Thumbnail/3Squared.png", 
+    "victors": ["ChefLime","OneShot786","MrBazooka","HurryingJackM","Karen","puffiballgd","Flibbertwiggins","newbite","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "clutterfunk auto", 
+    "points": 130, 
+    "creator": "Flibbertwiggins", 
+    "verifier": "Flibbertwiggins", 
+    "id": "141721939", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mPqaFPJlsZVik003C?invite=cr-MSxadFUsNjQxNDk4Nzkz&v=34", 
+    "thumbnail": "Thumbnail/Fibber.png", 
+    "victors": ["puffiballgd","Okrun","newbite","MrBazooka","Symm","FJKR"] 
+  },
+  { 
+    "name": "auto play area", 
+    "points": 127, 
+    "creator": "Flibbertwiggins", 
+    "verifier": "Flibbertwiggins", 
+    "id": "142192812", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mRX2KFHWmnNVZc4e5?invite=cr-MSxYQkksNjQxNDk4Nzkz", 
+    "thumbnail": "Thumbnail/Auto.jpg", 
+    "victors": ["Okrun","puffiballgd","MrBazooka","Symm","FJKR","ChillTipTop"] 
+  },
+  { 
+    "name": "Sakupen PooPoo X", 
+    "points": 67, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "141006285", 
+    "video": "KfMKBmVnY6E", 
+    "thumbnail": "Thumbnail/Poo.png", 
+    "victors": ["MrBazooka","HurryingJackM","Karen","OneShot786","puffiballgd","Flibbertwiggins","beat","Okrun","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Cowboys Demise", 
+    "points": 60, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140174223", 
+    "video": "7nJAYRoxoJ8", 
+    "thumbnail": "Thumbnail/CowboysDemise.png", 
+    "victors": ["puffiballgd","MrBazooka","Exterme","OneShot786","Karen","Flibbertwiggins","bleepboopbop","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "TWL VSC", 
+    "points": 91, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "145172634", 
+    "video": "WP7rvZCDUGY", 
+    "thumbnail": "Thumbnail/TWLVSC.png", 
+    "victors": ["MrBazooka","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "TWL always clear", 
+    "points": 87, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "144745144", 
+    "video": "u-eN27eL5go", 
+    "thumbnail": "Thumbnail/twlALWAYS.png", 
+    "victors": ["MrBazooka","puffiballgd","HurryingJackM","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Loonboon Wave", 
+    "points": 89, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "145240941", 
+    "video": "Q_dxkdfvs5Q", 
+    "thumbnail": "Thumbnail/Loonboon.png", 
+    "victors": ["MrBazooka","puffiballgd","HurryingJackM","lunikay","Symm","FJKR"] 
+  },
+  {
+    "name": "King Kong", 
+    "points": 117, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "143658426", 
+    "video": "https://medal.tv/games/geometry-dash/clips/n0bVTMoH198-m-YG-?invite=cr-MSw3ZjMsMzc5MDEwMTE2", 
+    "thumbnail": "Thumbnail/KingKong.png", 
+    "victors": ["puffiballgd","Symm","FJKR"] 
+  },
+  { 
+    "name": "Spam Practice", 
+    "points": 55, 
+    "creator": "ZizoGMD", 
+    "verifier": "ZizoGMD", 
+    "id": "140117104", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGrKy9vKqDaVrlZ0t?invite=cr-MSxxdjksNjI5MjU3MTI3", 
+    "thumbnail": "Thumbnail/SpamPractice.png", 
+    "victors": ["newbite","Symm","ChefLime","MrBazooka","OneShot786","HurryingJackM","Karen","puffiballgd","Flibbertwiggins","Okrun","lunikay","bleepboopbop","FJKR"] 
+  },
+  { 
+    "name": "Gurkey Circles", 
+    "points": 45, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140284261", 
+    "video": "4cU-ndspONo", 
+    "thumbnail": "Thumbnail/GurkeyCircles.png", 
+    "victors": ["puffiballgd","MrBazooka","OneShot786","Karen","Flibbertwiggins","newbite","lunikay","FJKR","Symm"] 
+  },
+  { 
+    "name": "Azure Portal", 
+    "points": 40, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140113463", 
+    "video": "DAK8pvU2diA", 
+    "thumbnail": "Thumbnail/AzurePortal.png", 
+    "victors": ["puffiballgd","Symm","MrBazooka","ARandomBall","newbite","OneShot786","Karen","Flibbertwiggins","lunikay","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Beefeated Brajan", 
+    "points": 77, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "144302722", 
+    "video": "PSpUJQngnuU", 
+    "thumbnail": "Thumbnail/Beefeated.png", 
+    "victors": ["MrBazooka","bleepboopbop","puffiballgd","lunikay","Fallen","Symm","HurryingJackM","FJKR"] 
+  },
+  { 
+    "name": "Sakupen PooPoo", 
+    "points": 35, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140060249", 
+    "video": "8LgXdYPXQyE", 
+    "thumbnail": "Thumbnail/SakupenPooPoo.png", 
+    "victors": ["xpealox","Symm","puffiballgd","ZizoGMD","MrBazooka","OneShot786","Karen","bleepboopbop","lunikay","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Blocked", 
+    "points": 37, 
+    "creator": "ZizoGMD", 
+    "verifier": "ZizoGMD", 
+    "id": "140076320", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGiCwRKsm0PwQpOW-?invite=cr-MSwzZm0sNjI5MjU3MTI3", 
+    "thumbnail": "Thumbnail/Blocked.png", 
+    "victors": ["xpealox","ARandomBall","MrBazooka","Symm","puffiballgd","ChefLime","OneShot786","Karen","newbite","bleepboopbop","lunikay","FJKR"] 
+  },
+  { 
+    "name": "arbys dih burger", 
+    "points": 15, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "139799043", 
+    "video": "RZ9abrQnMDs", 
+    "thumbnail": "Thumbnail/ArbysDihBurger.png", 
+    "victors": ["xpealox","ARandomBall","newbite","ZizoGMD","Symm","puffiballgd","MrBazooka","OneShot786","Karen","Okrun","lunikay","FJKR","fearflora"] 
+  },
+  { 
+    "name": "wendys pluh fries", 
+    "points": 80, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "145695401", 
+    "video": "n6MRAcH2ynM", 
+    "thumbnail": "Thumbnail/wendys.png", 
+    "victors": ["puffiballgd","FJKR","Symm","MrBazooka"] 
+  },
+  { 
+    "name": "i miss u szeltik", 
+    "points": 13, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140005842", 
+    "video": "BrcaemQWm-M", 
+    "thumbnail": "Thumbnail/IMissUSzeltik.png", 
+    "victors": ["xpealox","ARandomBall","newbite","ZizoGMD","Symm","MrBazooka","puffiballgd","OneShot786","Karen","Flibbertwiggins","lunikay","FJKR","fearflora"] 
+  },
+  { 
+    "name": "Gameplay", 
+    "points": 38, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "141409898", 
+    "video": "QnywM-Oqw60", 
+    "thumbnail": "Thumbnail/Gameplay.jpg", 
+    "victors": ["ChefLime","newbite","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "Chinese Anthem", 
+    "points": 88, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "141856884", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mPTzFp7iSowtB2E4Q?invite=cr-MSx2dTQsNjIzNjE5NTI1", 
+    "thumbnail": "Thumbnail/Chinese.png", 
+    "victors": ["puffiballgd","Okrun","HurryingJackM","bleepboopbop","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "4444", 
+    "points": 280, 
+    "creator": "newbite", 
+    "verifier": "OneShot786", 
+    "id": "141335863", 
+    "video": "mxl7__eCoP4", 
+    "thumbnail": "Thumbnail/444.png", 
+    "victors": ["Karen","newbite","Blendro","Symm","ashyy"] 
+  },
+  { 
+    "name": "pigeon", 
+    "points": 79, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "145200299", 
+    "video": "0JoaapeYTz4", 
+    "thumbnail": "Thumbnail/pigeon.jpg", 
+    "victors": ["MrBazooka","puffiballgd","HurryingJackM","bleepboopbop","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Cat City", 
+    "points": 277, 
+    "creator": "newbite", 
+    "verifier": "newbite", 
+    "id": "143842742", 
+    "video": "Bm4R0HBRWsE", 
+    "thumbnail": "Thumbnail/catcity.png", 
+    "victors": ["ashyy","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Temple Of Doom", 
+    "points": 36, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "141301382", 
+    "video": "TVcf3U5g9Lc", 
+    "thumbnail": "Thumbnail/Temple.png", 
+    "victors": ["puffiballgd","MrBazooka","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "ChefLimeWaveHard1", 
+    "points": 73, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "144146596", 
+    "video": "OiZfZro4euA", 
+    "thumbnail": "Thumbnail/ChefLimeHard1.png", 
+    "victors": ["MrBazooka","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "ChefLimeWaveBasic3", 
+    "points": 11, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "143694353", 
+    "video": "7WnQ9PEDbUM", 
+    "thumbnail": "Thumbnail/cheflime3.png", 
+    "victors": ["MrBazooka","puffiballgd","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "gorilla spam", 
+    "points": 8, 
+    "creator": "boiledbacon", 
+    "verifier": "boiledbacon", 
+    "id": "144238787", 
+    "video": "FedusNN604s", 
+    "thumbnail": "Thumbnail/Gorrila.jpeg", 
+    "victors": ["ChefLime","MrBazooka","puffiballgd","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "Tung After Tung", 
+    "points": 25, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "138263889", 
+    "video": "ULjAQQ4CLrY", 
+    "thumbnail": "Thumbnail/TungAfterTung.png", 
+    "victors": ["xpealox","ARandomBall","newbite","ZizoGMD","Symm","puffiballgd","MrBazooka","OneShot786","Karen","Flibbertwiggins","boiledbacon","bleepboopbop","lunikay","FJKR"] 
+  },
+  { 
+    "name": "Dihmountain", 
+    "points": 20, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140476546", 
+    "video": "hgxkwBJTMbI", 
+    "thumbnail": "Thumbnail/DihMountain.png", 
+    "victors": ["MrBazooka","puffiballgd","OneShot786","HurryingJackM","Karen","lunikay","FJKR","Symm","fearflora"] 
+  },
+  { 
+    "name": "Dihmountain Is Heck", 
+    "points": 53, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "141052107", 
+    "video": "oWoAM4WzeNc", 
+    "thumbnail": "Thumbnail/Dih.png", 
+    "victors": ["MrBazooka","OneShot786","Karen","puffiballgd","lunikay","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "Zoink WAVE", 
+    "points": 12, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "139784604", 
+    "video": "aXD7pMCZRc8", 
+    "thumbnail": "Thumbnail/ZoinkWave.png", 
+    "victors": ["xpealox","ARandomBall","newbite","ZizoGMD","Symm","puffiballgd","MrBazooka","OneShot786","Karen","Flibbertwiggins","lunikay","FJKR","fearflora"] 
+  },
+  { 
+    "name": "Swag Clubstep", 
+    "points": 7, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "139981798", 
+    "video": "YirRB3Wbneg", 
+    "thumbnail": "Thumbnail/SwagClubstep.png", 
+    "victors": ["xpealox","ARandomBall","ZizoGMD","newbite","Symm","puffiballgd","MrBazooka","OneShot786","Karen","bleepboopbop","HurryingJackM","lunikay","FJKR","fearflora"] 
+  },
+  { 
+    "name": "10 Seconds Hell", 
+    "points": 120, 
+    "creator": "jtohobby", 
+    "verifier": "jtohobby", 
+    "id": "141824810", 
+    "video": "YxB9E0Qao0E", 
+    "thumbnail": "Thumbnail/10.jpg", 
+    "victors": ["puffiballgd","FJKR"] 
+  },
+  { 
+    "name": "ChefLimeWaveBasic1", 
+    "points": 6, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140719114", 
+    "video": "kZfAQXHzhug", 
+    "thumbnail": "Thumbnail/ChefLimeWaveBasic1.png", 
+    "victors": ["puffiballgd","MrBazooka","ItsJellyGD","OneShot786","Karen","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "yes", 
+    "points": 10, 
+    "creator": "jtohobby", 
+    "verifier": "jtohobby", 
+    "id": "142076605", 
+    "video": "UWXTIpy7-Rc", 
+    "thumbnail": "Thumbnail/yes.jpg", 
+    "victors": ["MrBazooka","ChefLime","newbite","puffiballgd","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "no", 
+    "points": 160, 
+    "creator": "jtohobby", 
+    "verifier": "jtohobby", 
+    "id": "142076595", 
+    "video": "jby6T6uBaOw", 
+    "thumbnail": "Thumbnail/no.jpg", 
+    "victors": ["Okrun","newbite","MrBazooka","puffiballgd","lunikay","Symm","FJKR","ChillTipTop"] 
+  },
+  { 
+    "name": "Jynxzi Never Clear", 
+    "points": 5, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "140833328", 
+    "video": "1Fk0cX8IN2U", 
+    "thumbnail": "Thumbnail/Jynxzi.webp", 
+    "victors": ["MrBazooka","puffiballgd","OneShot786","Karen","beat","bleepboopbop","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "Spiked", 
+    "points": 97, 
+    "creator": "MrBazooka", 
+    "verifier": "MrBazooka", 
+    "id": "142076529", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mRrJbbHgjz5tpGHox?invite=cr-MSxwdTgsNjIzNjE5NTI1", 
+    "thumbnail": "Thumbnail/Spiked.png", 
+    "victors": ["newbite","puffiballgd","lunikay","Symm","FJKR","Okrun"] 
+  },
+  { 
+    "name": "gubby wave", 
+    "points": 4, 
+    "creator": "boiledbacon", 
+    "verifier": "boiledbacon", 
+    "id": "143890983", 
+    "video": "Kx1XrbrC5ek", 
+    "thumbnail": "Thumbnail/GubbyWave.png", 
+    "victors": ["ChefLime","MrBazooka","puffiballgd","HurryingJackM","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "ChefLimeWaveBasic2", 
+    "points": 2, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "141384914", 
+    "video": "ATQzpVbzw8k", 
+    "thumbnail": "Thumbnail/Cheflime2.png", 
+    "victors": ["puffiballgd","MrBazooka","boiledbacon","HurryingJackM","lunikay","Symm","FJKR","fearflora"] 
+  },
+  { 
+    "name": "ChefLimeWaveBasic4", 
+    "points": 39, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "145254406", 
+    "video": "F32FezBFhGg", 
+    "thumbnail": "Thumbnail/cheflime4.png", 
+    "victors": ["MrBazooka","HurryingJackM","puffiballgd","lunikay","Symm","FJKR"] 
+  },
+  { 
+    "name": "ChefLimeWaveBasic5", 
+    "points": 9, 
+    "creator": "ChefLime", 
+    "verifier": "ChefLime", 
+    "id": "145766436", 
+    "video": "TlZpIddPSOM", 
+    "thumbnail": "Thumbnail/ChefLime5.png", 
+    "victors": ["MrBazooka","FJKR","puffiballgd"] 
+  },
+  { 
+    "name": "Sakupen Hellcles", 
+    "points": 3, 
+    "creator": "ZizoGMD", 
+    "verifier": "ZizoGMD", 
+    "id": "140086188", 
+    "video": "https://medal.tv/games/geometry-dash/clips/mGkOegjLEfNh2eCgA?invite=cr-MSwyVFAsNjI5MjU3MTI3&v=22", 
+    "thumbnail": "Thumbnail/SakupenHellcles.png", 
+    "victors": ["xpealox","Symm","ARandomBall","puffiballgd","MrBazooka","newbite","Karen","ChefLime","ItsJellyGD","OneShot786","lunikay","FJKR","fearflora"] 
+  },
+  {
+    "name": "quoi", 
+    "points": 273, 
+    "creator": "Okrun", 
+    "verifier": "Okrun", 
+    "id": "147477033", 
+    "video": "gY5GkjlYxTc", 
+    "thumbnail": "Thumbnail/quoi.png", 
+    "victors": []
+  },
+  {
+    "name": "sh1awase", 
+    "points": 226, 
+    "creator": "sevehweveh", 
+    "verifier": "ChillTipTop", 
+    "id": "147448660", 
+    "video": "IXV49zzoRg", 
+    "thumbnail": "Thumbnail/sh1awase.png", 
+    "victors": ["Karen","sevehweveh","MrBazooka"]
+  },
+  {
+    "name": "sonic dih", 
+    "points": 212, 
+    "creator": "bleepboopbop", 
+    "verifier": "bleepboopbop", 
+    "id": "147056107", 
+    "video": "bT2VcriJ9-8", 
+    "thumbnail": "Thumbnail/sonicdih.png", 
+    "victors": ["ChillTipTop","MrBazooka","puufy","puffiballgd"]
+  },
+  {
+    "name": "pants eater nerf",
+    "points": 380,
+    "creator": "newbite",
+    "verifier": "newbite",
+    "id": "147531580",
+    "video": "aR86yrEpbcE",
+    "thumbnail": "Thumbnail/pantseaternerf.png",
+    "victors": ["puffiballgd","MrBazooka"]
+  },
+  {
+    "name": "Jiggy Wave",
+    "points": 340,
+    "creator": "Justgdboi",  
+    "verifier": "Karen",
+    "id": "147457047",
+    "video": "X94SAgYxoUM",
+    "thumbnail": "Thumbnail/jiggywave.png",
+    "victors": []
+  },
+  {
+    "name": "ordinary life",
+    "points": 200,
+    "creator": "sevehweveh",
+    "verifier": "sevehweveh",
+    "id": "147658436",
+    "video": "VX24EFSldvv1snQn",
+    "thumbnail": "Thumbnail/ordinarylife.png",
+    "victors": ["MrBazooka","puufy","puffiballgd"]
+  },
+  {
+    "name": "newbites nightmare (boner)",
+    "points": 395,
+    "creator": "puufy",
+    "verifier": "puufy",
+    "id": "147596018",
+    "video": "eyauPsZV-k4",
+    "thumbnail": "Thumbnail/newbitenightmare.png",
+    "victors": []
+  },
+  {
+    "name": "SONkupen end",
+    "points": 237,
+    "creator": "ChillTipTop",
+    "verifier": "ChillTipTop",
+    "id": "147685252",
+    "video": "5VFzaFjxPvs",
+    "thumbnail": "Thumbnail/SONkupenend.png",
+    "victors": ["MrBazooka","puffiballgd"]
+  },
+  {
+    "name": "metronome",
+    "points": 1,
+    "creator": "sevehweveh",
+    "verifier": "sevehweveh",
+    "id": "147697069",
+    "video": "9rum5CeOtX8",
+    "thumbnail": "Thumbnail/metronome.png",
+    "victors": ["MrBazooka","HurryingJackM","puffiballgd"]
+  },
+  {
+    "name": "kevin simulator",
+    "points": 245,
+    "creator": "ChillTipTop",
+    "verifier": "ChillTipTop",
+    "id": "147742253",
+    "video": "BhOigzlFR54",
+    "thumbnail": "Thumbnail/kevinsimulator.png",
+    "victors": ["MrBazooka"]
+  },
+  {
+    "name": "doyouremember",
+    "points": 397,
+    "creator": "ashyy",
+    "verifier": "ashyy",
+    "id": "147579122",
+    "video": "cQctAfBICi5w7bvg",
+    "thumbnail": "Thumbnail/doyouremember.png",
+    "victors": []
+  }
+]

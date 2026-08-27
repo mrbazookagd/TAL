@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THE WAVE LIST - ROULETTE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Unique styles for the roulette game layout */
+        .roulette-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            max-width: 700px;
+            margin: 40px auto;
+            text-align: center;
+        }
+        .progress-banner {
+            font-size: 2.5rem;
+            font-weight: 800;
+            color: var(--accent, #47e5bc);
+            text-shadow: 0 0 20px rgba(71, 229, 188, 0.2);
+            margin-bottom: 5px;
+        }
+        .target-sub {
+            font-size: 1rem;
+            color: #888;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .roulette-card {
+            width: 100%;
+            background: rgba(20, 22, 30, 0.8);
+            border: 1px solid var(--border, rgba(255,255,255,0.05));
+            border-radius: 16px;
+            padding: 40px;
+            box-shadow: 0 40px 80px rgba(0,0,0,0.7);
+            backdrop-filter: blur(10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            transition: all 0.3s ease;
+        }
+        .roulette-thumb {
+            width: 320px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid rgba(255,255,255,0.1);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+        }
+        .level-name {
+            font-size: 2rem;
+            font-weight: 800;
+            margin: 10px 0 0 0;
+            letter-spacing: -0.5px;
+        }
+        .meta-line {
+            display: flex;
+            gap: 15px;
+            font-size: 0.95rem;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+        .meta-line span strong {
+            color: #fff;
+        }
+        .tier-badge {
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            background: rgba(255,255,255,0.03);
+            border: 1px solid currentColor;
+        }
+        .roulette-btn {
+            background: #fff;
+            color: #000;
+            border: none;
+            padding: 14px 40px;
+            font-size: 1rem;
+            font-weight: 700;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-top: 15px;
+        }
+        .roulette-btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+        .roulette-btn:active {
+            transform: translateY(0);
+        }
+        .win-screen {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            animation: fadeIn 0.5s ease forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-logo" onclick="window.location.href='index.html'" style="cursor:pointer;">THE WAVE LIST</div>
+        <div>
+            <a href="index.html" class="nav-link">BACK TO LIST</a>
+            <a href="leaderboard.html" class="nav-link">LEADERBOARD</a>
+        </div>
+    </nav>
+
+    <div class="main-layout" style="display: block; padding: 40px 20px;">
+        <div class="roulette-container">
+            
+            <div id="game-header">
+                <div class="progress-banner" id="target-percentage">Current Target: 5%</div>
+                <div class="target-sub" id="level-counter">Level 1 of 20</div>
+            </div>
+
+            <div class="roulette-card" id="roulette-card">
+                <div id="game-content" style="display: flex; flex-direction: column; align-items: center; gap: 20px; width: 100%;">
+                    <img id="r-thumb" src="" class="roulette-thumb">
+                    <h2 id="r-name" class="level-name">---</h2>
+                    
+                    <div class="meta-line">
+                        <span>Creator: <strong id="r-creator">-</strong></span>
+                        <span>•</span>
+                        <span>ID: <strong id="r-id">-</strong></span>
+                    </div>
+
+                    <div id="r-tier" class="tier-badge" style="color: #fff;">-</div>
+                    
+                    <div style="display: flex; gap: 15px; flex-wrap: wrap; justify-content: center;">
+                        <button class="roulette-btn" id="action-btn" onclick="advanceRoulette()">I Beat It! Next Level</button>
+                        <button class="roulette-btn" id="skip-btn" onclick="skipLevel()" style="background: rgba(255, 255, 255, 0.1); color: #fff; border: 1px solid rgba(255, 255, 255, 0.2);">Skip Level</button>
+                    </div>
+                </div>
+
+                <div id="win-content" class="win-screen">
+                    <div style="font-size: 5rem;">👑</div>
+                    <h2 class="level-name" style="color: var(--accent, #47e5bc);">ROULETTE COMPLETED!</h2>
+                    <p style="color: #888; max-width: 400px; margin: 0 auto 15px auto; line-height: 1.6;">You successfully scaled through 20 random levels all the way from 5% to 100%!</p>
+                    <button class="roulette-btn" onclick="resetGame()">Play Again</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        let allLevels = [];
+        let allTiers = [];
+        let usedLevelIds = new Set();
+        let currentStep = 1; // Tracks steps 1 through 20
+        
+        // Step mapping arrays for your targets
+        const targets = [5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95, 100];
+
+        async function initGame() {
+            try {
+                // Fetch layout tiers setup configuration
+                const resTiers = await fetch(`tiers.json?v=${new Date().getTime()}`);
+                allTiers = await resTiers.json();
+
+                // Fetch levels registry data file
+                const resLevels = await fetch(`levels.json?v=${new Date().getTime()}`);
+                allLevels = await resLevels.json();
+
+                if (allLevels.length < 20) {
+                    alert("Warning: You need at least 20 levels in your levels.json file to fully complete the roulette challenges!");
+                }
+
+                resetGame();
+            } catch (e) {
+                console.error("Error launching roulette database modules:", e);
+                document.getElementById('r-name').innerText = "Failed loading game data.";
+            }
+        }
+
+        function resetGame() {
+            usedLevelIds.clear();
+            currentStep = 1;
+            
+            // Toggle view visibility interfaces back to initial setup configurations
+            document.getElementById('game-header').style.display = 'block';
+            document.getElementById('game-content').style.display = 'flex';
+            document.getElementById('win-content').style.display = 'none';
+
+            getNewRandomLevel();
+        }
+
+        function getNewRandomLevel() {
+            // Filter out any levels that have already been pulled this run
+            const availableLevels = allLevels.filter(lvl => !usedLevelIds.has(lvl.id));
+            
+            // Fallback safety if pool is exhausted early
+            const sourcePool = availableLevels.length > 0 ? availableLevels : allLevels;
+            
+            // Pull a completely random item out of the pool choices
+            const randomLevel = sourcePool[Math.floor(Math.random() * sourcePool.length)];
+            
+            // Save selection to avoid duplicates
+            usedLevelIds.add(randomLevel.id);
+
+            // Update UI Texts
+            const targetPercent = targets[currentStep - 1];
+            document.getElementById('target-percentage').innerText = `Get ${targetPercent}%`;
+            document.getElementById('level-counter').innerText = `Level ${currentStep} of 20`;
+            
+            document.getElementById('r-name').innerText = randomLevel.name;
+            document.getElementById('r-creator').innerText = randomLevel.creator;
+            document.getElementById('r-id').innerText = randomLevel.id;
+            
+            // Apply level item image thumbnail sources
+            const imgSource = randomLevel.thumbnail ? randomLevel.thumbnail : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+            document.getElementById('r-thumb').src = imgSource;
+
+            // Compute and apply active specific classification tier attributes
+            const currentTier = allTiers.find(t => randomLevel.points >= t.minPoints && randomLevel.points <= t.maxPoints);
+            const tierBadge = document.getElementById('r-tier');
+            
+            if (currentTier) {
+                tierBadge.innerText = currentTier.name;
+                tierBadge.style.color = currentTier.color;
+                tierBadge.style.borderColor = currentTier.color;
+                tierBadge.style.display = 'inline-block';
+            } else {
+                tierBadge.style.display = 'none';
+            }
+        }
+
+        function advanceRoulette() {
+            if (currentStep >= 20) {
+                // Win Condition Trigger met
+                document.getElementById('game-header').style.display = 'none';
+                document.getElementById('game-content').style.display = 'none';
+                document.getElementById('win-content').style.display = 'flex';
+            } else {
+                currentStep++;
+                getNewRandomLevel();
+            }
+        }
+
+        // Action loop to skip the current item and get a fresh selection without adding target counts
+        function skipLevel() {
+            getNewRandomLevel();
+        }
+
+        // Run instantiation loop functions
+        initGame();
+    </script>
+</body>
+</html>
