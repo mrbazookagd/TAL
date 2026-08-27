@@ -2,12 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>THE ALTERNATION LIST</title>
+    <title>THE WAVE LIST</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
-        <div class="nav-logo">THE ALTERNATION LIST</div>
+        <div class="nav-logo">THE WAVE LIST</div>
         <div>
             <a href="submit.html" class="nav-link" style="margin-right: 20px;">SUBMIT</a>
             <a href="roulette.html" class="nav-link" style="margin-right: 20px;">ROULETTE</a>
@@ -17,6 +17,9 @@
 
     <div class="main-layout">
         <div style="display: flex; flex-direction: column; gap: 15px;">
+            <div style="position: sticky; top: 0; z-index: 10; background: rgba(20, 22, 30, 0.95); padding-bottom: 10px;">
+                <input type="text" id="level-search" placeholder="Search levels..." oninput="filterLevels()" style="width: 100%; padding: 10px 14px; background: rgba(255, 255, 255, 0.05); border: 1px solid rgba(255, 255, 255, 0.1); border-radius: 8px; color: #fff; font-size: 0.85rem; outline: none; box-sizing: border-box; transition: border-color 0.2s ease;" onfocus="this.style.borderColor='var(--accent, #47e5bc)'" onblur="this.style.borderColor='rgba(255, 255, 255, 0.1)'">
+            </div>
             <div class="sidebar" id="sidebar"></div>
         </div>
 
@@ -62,84 +65,25 @@
         const TIER_LOGO_SIZE = "36px"; 
         // ---------------------------
 
+        let allLevels = [];
+        let allTiers = [];
+
         async function init() {
             try {
                 const resTiers = await fetch(`tiers.json?v=${new Date().getTime()}`);
-                const tiers = await resTiers.json();
+                allTiers = await resTiers.json();
 
                 const res = await fetch(`levels.json?v=${new Date().getTime()}`);
-                const data = await res.json();
-                const side = document.getElementById('sidebar');
+                allLevels = await res.json();
 
-                data.sort((a, b) => b.points - a.points);
+                allLevels.sort((a, b) => b.points - a.points);
 
-                side.innerHTML = ""; 
-
-                data.forEach((lvl, i) => {
-                    const rank = i + 1;
-
-                    if (rank === 1) {
-                        const header = document.createElement('div');
-                        header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: var(--accent, #47e5bc); letter-spacing: 1.5px; text-transform: uppercase; padding: 12px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
-                        header.innerText = "Main List";
-                        side.appendChild(header);
-                    } else if (rank === 76) {
-                        const header = document.createElement('div');
-                        header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: #aaa; letter-spacing: 1.5px; text-transform: uppercase; padding: 18px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
-                        header.innerText = "Extended List";
-                        side.appendChild(header);
-                    } else if (rank === 151) {
-                        const legacyContainer = document.createElement('div');
-                        legacyContainer.style.cssText = "display: flex; align-items: center; justify-content: space-between; padding: 18px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
-                        
-                        const header = document.createElement('div');
-                        header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: #666; letter-spacing: 1.5px; text-transform: uppercase;";
-                        header.innerText = "Legacy List";
-                        
-                        const btn = document.createElement('a');
-                        btn.href = "legacy.html";
-                        btn.innerText = "VIEW ALL";
-                        btn.style.cssText = "font-size: 0.7rem; font-weight: 700; color: var(--accent, #47e5bc); text-decoration: none; border: 1px solid var(--accent, #47e5bc); padding: 3px 8px; border-radius: 4px; transition: all 0.2s ease;";
-                        btn.onmouseover = () => { btn.style.background = 'var(--accent, #47e5bc)'; btn.style.color = '#000'; };
-                        btn.onmouseout = () => { btn.style.background = 'transparent'; btn.style.color = 'var(--accent, #47e5bc)'; };
-
-                        legacyContainer.appendChild(header);
-                        legacyContainer.appendChild(btn);
-                        side.appendChild(legacyContainer);
-                    }
-
-                    const displayPts = rank > 150 ? "LEGACY" : `${lvl.points} PTS`;
-
-                    const div = document.createElement('div');
-                    div.className = `list-item ${rank <= 3 ? 'top-'+rank : ''}`;
-                    
-                    div.style.display = "flex";
-                    div.style.alignItems = "center";
-                    div.style.gap = "12px";
-                    
-                    const currentTier = tiers.find(t => lvl.points >= t.minPoints && lvl.points <= t.maxPoints);
-                    if (currentTier) {
-                        div.style.borderLeft = `4px solid ${currentTier.color}`;
-                    }
-                    
-                    const imgSource = lvl.thumbnail ? lvl.thumbnail : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
-
-                    div.innerHTML = `
-                        <div class="rank" style="${currentTier ? 'color:' + currentTier.color : ''}; flex-shrink: 0; min-width: 35px;">#${rank}</div>
-                        <img src="${imgSource}" class="thumb-mini" style="width: 80px; height: 45px; object-fit: cover; flex-shrink: 0; border-radius: 4px;">
-                        <div style="flex: 1; min-width: 0; overflow: hidden; text-align: left;">
-                            <div style="font-weight:700; font-size:0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${lvl.name}</div>
-                            <div style="font-size:0.7rem; color:#666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${displayPts}</div>
-                        </div>
-                    `;
-                    div.onclick = () => update(lvl, rank);
-                    side.appendChild(div);
-                });
+                renderSidebar(allLevels);
 
                 const legendList = document.getElementById('legend-list');
                 let legendHTML = "";
                 
-                [...tiers].reverse().forEach(t => {
+                [...allTiers].reverse().forEach(t => {
                     const logoSrc = t.image ? t.image : ''; 
                     const manualScale = t.size ? t.size : "100%";
 
@@ -155,11 +99,88 @@
                 });
                 legendList.innerHTML = legendHTML;
 
-                if(data.length > 0) update(data[0], 1);
+                if(allLevels.length > 0) update(allLevels[0], 1);
             } catch(e) {
                 console.error("Error loading levels layout:", e);
                 document.getElementById('main-title').innerText = "Error loading list records.";
             }
+        }
+
+        function renderSidebar(levelsToRender) {
+            const side = document.getElementById('sidebar');
+            side.innerHTML = ""; 
+
+            if (levelsToRender.length === 0) {
+                side.innerHTML = `<div style="color: #666; font-size: 0.85rem; padding: 10px; text-align: center;">No levels found</div>`;
+                return;
+            }
+
+            levelsToRender.forEach((lvl) => {
+                const rank = allLevels.indexOf(lvl) + 1;
+
+                if (rank === 1) {
+                    const header = document.createElement('div');
+                    header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: var(--accent, #47e5bc); letter-spacing: 1.5px; text-transform: uppercase; padding: 12px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
+                    header.innerText = "Main List";
+                    side.appendChild(header);
+                } else if (rank === 76) {
+                    const header = document.createElement('div');
+                    header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: #aaa; letter-spacing: 1.5px; text-transform: uppercase; padding: 18px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
+                    header.innerText = "Extended List";
+                    side.appendChild(header);
+                } else if (rank === 151) {
+                    const legacyContainer = document.createElement('div');
+                    legacyContainer.style.cssText = "display: flex; align-items: center; justify-content: space-between; padding: 18px 10px 6px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 8px;";
+                    
+                    const header = document.createElement('div');
+                    header.style.cssText = "font-weight: 800; font-size: 0.9rem; color: #666; letter-spacing: 1.5px; text-transform: uppercase;";
+                    header.innerText = "Legacy List";
+                    
+                    const btn = document.createElement('a');
+                    btn.href = "legacy.html";
+                    btn.innerText = "VIEW ALL";
+                    btn.style.cssText = "font-size: 0.7rem; font-weight: 700; color: var(--accent, #47e5bc); text-decoration: none; border: 1px solid var(--accent, #47e5bc); padding: 3px 8px; border-radius: 4px; transition: all 0.2s ease;";
+                    btn.onmouseover = () => { btn.style.background = 'var(--accent, #47e5bc)'; btn.style.color = '#000'; };
+                    btn.onmouseout = () => { btn.style.background = 'transparent'; btn.style.color = 'var(--accent, #47e5bc)'; };
+
+                    legacyContainer.appendChild(header);
+                    legacyContainer.appendChild(btn);
+                    side.appendChild(legacyContainer);
+                }
+
+                const displayPts = rank > 150 ? "LEGACY" : `${lvl.points} PTS`;
+
+                const div = document.createElement('div');
+                div.className = `list-item ${rank <= 3 ? 'top-'+rank : ''}`;
+                
+                div.style.display = "flex";
+                div.style.alignItems = "center";
+                div.style.gap = "12px";
+                
+                const currentTier = allTiers.find(t => lvl.points >= t.minPoints && lvl.points <= t.maxPoints);
+                if (currentTier) {
+                    div.style.borderLeft = `4px solid ${currentTier.color}`;
+                }
+                
+                const imgSource = lvl.thumbnail ? lvl.thumbnail : "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=";
+
+                div.innerHTML = `
+                    <div class="rank" style="${currentTier ? 'color:' + currentTier.color : ''}; flex-shrink: 0; min-width: 35px;">#${rank}</div>
+                    <img src="${imgSource}" class="thumb-mini" style="width: 80px; height: 45px; object-fit: cover; flex-shrink: 0; border-radius: 4px;">
+                    <div style="flex: 1; min-width: 0; overflow: hidden; text-align: left;">
+                        <div style="font-weight:700; font-size:0.85rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${lvl.name}</div>
+                        <div style="font-size:0.7rem; color:#666; white-space: nowrap; overflow: hidden; text-overflow: ellipsis;">${displayPts}</div>
+                    </div>
+                `;
+                div.onclick = () => update(lvl, rank);
+                side.appendChild(div);
+            });
+        }
+
+        function filterLevels() {
+            const query = document.getElementById('level-search').value.toLowerCase().trim();
+            const filtered = allLevels.filter(lvl => lvl.name.toLowerCase().includes(query));
+            renderSidebar(filtered);
         }
 
         function update(lvl, rank) {
