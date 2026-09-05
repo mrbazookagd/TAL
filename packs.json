@@ -1,88 +1,9 @@
 [
   {
-    "name": "Wave Corridor Pack",
+    "name": "Top 1 Pack",
     "tier": "PLATINUM",
     "points": 100,
     "levels": [
-      "Unnerfed Wave Corridor",
-      "Silent Wave Corridor Infinity Unleashed XYZ",
-      "Old Wave Corridor",
-      "Wave Corridor",
-      "Nerfed Wave Corridor"
-    ]
-  },
-  {
-    "name": "Top 1 Pack I",
-    "tier": "PLATINUM",
-    "points": 100,
-    "levels": [
-      "Unnerfed Wave Corridor",
-      "ULTIMATE DIHRUCTION",
-      "Tung After Tung"
-    ]
-  },
-  {
-    "name": "Radioactive Trilogy",
-    "tier": "PLATINUM",
-    "points": 100,
-    "levels": [
-      "NEPTUNIUM",
-      "URANIUM",
-      "PLUTONIUM"
-    ]
-  },
-  {
-    "name": "Top 1 Pack II",
-    "tier": "DIAMOND",
-    "points": 200,
-    "levels": [
-      "Zirconium Shard",
-      "SYMM NO SCLEARS",
-      "Defeated Brajan"
-    ]
-  },
-  {
-    "name": "Defeated Pack",
-    "tier": "DIAMOND",
-    "points": 200,
-    "levels": [
-      "Defeated Brajan",
-      "The Brajan Dih",
-      "defeated ez nerf",
-      "Beefeated Brajan"
-    ]
-  },
-  {
-    "name": "TooSquared and Friends",
-    "tier": "DIAMOND",
-    "points": 200,
-    "levels": [
-      "TooCub3d",
-      "TooSquared",
-      "3Squared"
-    ]
-  },
-  {
-    "name": "ChefLimeWaveBasic Pack",
-    "tier": "SILVER",
-    "points": 50,
-    "levels": [
-      "ChefLimeWaveBasic4",
-      "ChefLimeWaveBasic3",
-      "ChefLimeWaveBasic5",
-      "ChefLimeWaveBasic1",
-      "ChefLimeWaveBasic2",
-      "ChefLimeWaveBasic FINALE"
-    ]
-  },
-  {
-    "name": "Bottom 1 Pack I",
-    "tier": "BRONZE",
-    "points": 25,
-    "levels": [
-      "Zoink WAVE",
-      "Swag Clubstep",
-      "Sakupen Hellcles"
+      "Alter Spa",
     ]
   }
-]
